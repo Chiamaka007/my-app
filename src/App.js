@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Weather from "./Weather";
 
@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <h1>Weather App</h1>
      <Weather />
+     <a href="https://github.com/Chiamaka007/my-app" target="_blank" rel="noreferrer">Open sourced on github</a>
     </div>
   );
 }
