@@ -1,10 +1,33 @@
 .Weather {
-  border: 1px solid black;
-}
-body {
-  background-color: #EEEEEE;
+  font-family: "Courier New", Courier, monospace;
+  border: 1px solid rgb(36, 35, 35);
+  padding: 20px;
+  border-radius: 4px;
+  line-height: 20px;
 }
 
-ul {
+.Weather ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.Weather form {
+  margin-bottom: 20px;
+}
+.Weather img {
+  display: inline-block;
+  vertical-align: top;
+  height: 64px;
+}
+.Weather .temperature {
+  font-size: 64px;
+  font-weight: bold;
+}
+.Weather .unit {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 800px;
+  position: relative;
+  top: -34px;
+  margin-left: 5px;
 }
