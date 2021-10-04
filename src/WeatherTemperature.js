@@ -6,7 +6,8 @@ export default function WeatherTemperature(props) {
   return (
     <div className="temperature">
       <span className="temperature">{Math.round(props.celsius)}</span>
-     <span className="unit">°C</span>
+      <span className="unit">°C |</span>
+      <span className="unit">°F</span>
     </div>
   );
 }
