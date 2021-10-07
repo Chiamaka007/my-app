@@ -1,5 +1,4 @@
-.weather
- {
+.weather {
   font-family: "Courier New", Courier, monospace;
   border: 1px solid rgb(36, 35, 35);
   padding: 20px;
@@ -7,33 +6,43 @@
   line-height: 20px;
 }
 
-.weather
- ul {
+.weather ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.weather
- form {
+.weather form {
   margin-bottom: 20px;
 }
-.weather
- img {
+.weather img {
   display: inline-block;
   vertical-align: top;
   height: 64px;
 }
-.weather
- .temperature {
+.weather .temperature {
   font-size: 64px;
   font-weight: bold;
+  position: relative;
+  left: 20px;
+  bottom: 16px;
 }
-.weather
- .unit {
+.weather .unit {
   font-size: 20px;
   line-height: 1;
   font-weight: 800px;
   position: relative;
-  top: -34px;
-  margin-left: 5px;
+  top: -45px;
+  margin-left: 20px;
+}
+.weather a {
+  text-decoration: none;
+}
+.weather a:hover {
+  text-decoration: underline;
+}
+.temperature-min {
+  font-weight: bold;
+}
+.temperature-max {
+  opacity: 0.7;
 }
