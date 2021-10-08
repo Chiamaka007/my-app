@@ -4,7 +4,9 @@
   padding: 20px;
   border-radius: 4px;
   line-height: 20px;
-}
+   background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+   color: #ede6e6;
+  }
 
 .weather ul {
   list-style: none;
@@ -36,6 +38,10 @@
 }
 .weather a {
   text-decoration: none;
+}
+.weather .btn-search {
+  background-color: #6fdae7;
+  color: black;
 }
 .weather a:hover {
   text-decoration: underline;
