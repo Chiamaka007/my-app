@@ -21,17 +21,18 @@ export default function WeatherForecast(props) {
             <div>Thu</div>
             <WeatherIcon code="01d" />
             <br />
-            <span className="temperature-min">{forecast[0].temp.min}</span>
-            <span className="temperature-max"> {forecast[0].temp.max}</span>
+            <span className="temperature-min">{Math.round(forecast[0].temp.min)}</span>
+            <span className="temperature-max"> {Math.round(forecast[0].temp.max)}</span>
           </div>
         </div>
       </div>
     );
   } else {
     let lat = props.coordinates.lat;
-    let lon = props.coordinates.lat;
+    let lon = props.coordinates.lon;
     const apiKey = "5447915a7bcf0a835af038a7bf56c3a2";
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
+    return "loading..."
   }
 }
