@@ -4,9 +4,9 @@
   padding: 20px;
   border-radius: 4px;
   line-height: 20px;
-   background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
-   color: #ede6e6;
-  }
+  background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  color: #ede6e6;
+}
 
 .weather ul {
   list-style: none;
@@ -51,4 +51,9 @@
 }
 .temperature-max {
   opacity: 0.7;
+}
+@media (max-width: 480px) {
+  .weather .btn-search {
+    padding: 6px;
+  }
 }
